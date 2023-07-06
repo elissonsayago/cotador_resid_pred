@@ -34,6 +34,7 @@ def predict():
     return df1.to_json(orient='records')
 
 if __name__ == '__main__':
-    #start flask
+    #start flask depois de instalar o scikit-learn
     port=os.environ.get('PORT',5000)
+    #app.run( host='0.0.0.0', port='5000')
     app.run( host='0.0.0.0', port=port)
